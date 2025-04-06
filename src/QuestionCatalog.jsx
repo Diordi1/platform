@@ -14,7 +14,7 @@ function QuestionCatalog() {
     let [questions,setQuestions]=useState([]);
 useEffect(()=>{
 
-    axios.get("http://localhost:8080/coding/questions/allQuestions")
+    axios.get("https://platform-qu8a.onrender.com/coding/questions/allQuestions")
     .then((res)=>{console.log(res.data)
         setQuestions(res.data)
     })
