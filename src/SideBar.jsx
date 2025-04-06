@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
 function SideBar() {
+    
     let navigate=useNavigate();
 
     return ( <div className="w-[100%] rounded-2xl bg-gray-700 text-white ">
