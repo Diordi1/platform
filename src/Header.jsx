@@ -1,3 +1,6 @@
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import Notes from "./Notes";
+
 function Header() {
     window.addEventListener("scroll",()=>{
         const header = document.querySelector('header');
@@ -26,10 +29,18 @@ function Header() {
             <h1 className="temp2">Platform</h1>
         </div>
         <div className="flex space-x-4 text-gray-300 items-center justify-center p-2">
+            <BrowserRouter>
+            {/* <Routes>
+                <Route path="/notes" element={<Notes/>} />
+            </Routes> */}
             <p className="hover:text-gray-400">Targets</p>
             <p className="hover:text-gray-400">Pending</p>
-            <p className="hover:text-gray-400">Shortcuts</p>
+            <p className="hover:text-gray-400"><Link to="/notes" onClick={(e)=>{
+                e.preventDefault();
+                window.location.href = "/notes"; // Redirect to the Notes page
+            }}>Notes</Link></p>
             <p className="hover:text-gray-400">Ache Questions</p>
+            </BrowserRouter>
         </div>
         <div>
             <button className="text-md  rounded-xl p-3 text-sky-400 hover:text-sky-500"><a href="https://phpmyadmin.co/">Database Health</a></button>

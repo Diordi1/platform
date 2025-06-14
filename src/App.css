@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@source "../node_modules/flowbite-datepicker";
 .header-shrink{
     /* background-color: #ffffff; */
     width:80%;
@@ -19,3 +20,17 @@ header {
         transition: font-size 0.3s ease;
         font-size: 1.5rem;
     }
+
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        background: transparent;
+        bottom: 0;
+        color: transparent;
+        cursor: pointer;
+        height: auto;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: auto;
+    }
+    

@@ -9,6 +9,7 @@ import AddQuestion from './AddQuestion'
 // import AddQuestion from './AddQuestion'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Header from './Header';
+import Notes from './Notes';
 
 let LazyQuestion=React.lazy(()=>import("./QuestionCatalog"))
 let LazyAddQuestion=React.lazy(()=>import("./AddQuestion"))
@@ -21,6 +22,7 @@ function App() {
       <BrowserRouter>
         <Routes>  
           <Route path="/" element={<QuestionCatalog/>} />
+          <Route path="/notes" element={<Notes/>}/>
           <Route path="/addQuestion" element={
             <React.Suspense fallback={
               console.log("loading...")
