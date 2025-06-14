@@ -22,12 +22,10 @@ function App() {
       <BrowserRouter>
         <Routes>  
           <Route path="/" element={<QuestionCatalog/>} />
-          <Route path="/notes" element={<React.Suspense fallback={
-              console.log("loading...")
-            }>
+          <Route path="/notes" element={
 
             <Notes/>
-            </React.Suspense>
+            
             
             }/>
           <Route path="/addQuestion" element={
