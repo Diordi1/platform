@@ -44,7 +44,7 @@ function Header() {
         </div>
         <div>
             <button className="text-md  rounded-xl p-3 text-sky-400 hover:text-sky-500"><a href="https://phpmyadmin.co/">Database Health</a></button>
-            <button className="text-md rounded-4xl p-3 text-white bg-sky-400 hover:bg-sky-500 shadow-sky-400 shadow-2xl"><a href="https://platform-qu8a.onrender.com/actuator">Health Status</a></button>
+            <button className="text-md rounded-4xl p-3 text-white bg-sky-400 hover:bg-sky-500 shadow-sky-400 shadow-2xl"><a href="https://platform-49vq.onrender.com/actuator">Health Status</a></button>
         </div>
         </header>
     </div>);

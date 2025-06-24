@@ -34,7 +34,7 @@ function AddQuestion() {
     }
     let clicke1=()=>{
         setLoading(true);
-        axios.post("https://platform-qu8a.onrender.com/coding/questions/add",val).then((res)=>{
+        axios.post("https://platform-49vq.onrender.com/coding/questions/add",val).then((res)=>{
             console.log(res.data);
             setTemp(res.data);
             setLoading(false);

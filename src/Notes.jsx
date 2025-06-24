@@ -10,7 +10,7 @@ function Notes() {
         content:""
     })
     useState(() => {
-        axios.get("https://platform-qu8a.onrender.com/notes/all").then((res)=>{
+        axios.get("https://platform-49vq.onrender.com/notes/all").then((res)=>{
             setNotes(res.data);
         }).catch((err)=>{
             console.error("Error fetching notes:", err);
@@ -28,7 +28,7 @@ function Notes() {
             setNotes([...notes, newNote]);
             setNewNote("");
         }
-        axios.post("https://platform-qu8a.onrender.com/notes/add",{
+        axios.post("https://platform-49vq.onrender.com/notes/add",{
             heading: noteData.title,
             content: noteData.content
         }).then((res) => {

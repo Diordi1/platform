@@ -17,7 +17,13 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <div className='w-screen h-screen '>
+    <div className='w-[100vw] h-[100vh] background-neutral-900' 
+      style={{
+        backgroundImage:"radial-gradient(circle at 0.5px 0.5px,rgba(9,182,212,0.2) 0.6px, transparent 0)",
+        backgroundSize:"7px 7px",
+        backgroundRepeat:"repeat",
+      }}
+    >
       <Header/>
       <BrowserRouter>
         <Routes>  
