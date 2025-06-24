@@ -33,6 +33,7 @@ function Notes() {
             content: noteData.content
         }).then((res) => {
             console.log("Note added successfully:", res.data);
+            setNotes([...notes, res.data]);
         }).catch((err) => {
             console.error("Error adding note:", err);
         });
