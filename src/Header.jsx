@@ -1,4 +1,4 @@
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Link, Route, Routes, useNavigate } from "react-router-dom";
 import Notes from "./Notes";
 
 function Header() {
@@ -21,6 +21,7 @@ function Header() {
           header.classList.remove('header-shrink');
         }
     })
+    // let navigate=useNavigate();
     return (  <div className="sticky px-6  z-10 top-4   ">
         <header className="bg-transparent w-full  p-3 sticky z-20 backdrop-blur-lg  border-white rounded-full flex justify-between items-center">
         <div className="flex text-white space-x-2 items-center justify-between">
@@ -29,18 +30,15 @@ function Header() {
             <h1 className="temp2">Platform</h1>
         </div>
         <div className="flex space-x-4 text-gray-300 items-center justify-center p-2">
-            <BrowserRouter>
             {/* <Routes>
                 <Route path="/notes" element={<Notes/>} />
             </Routes> */}
             <p className="hover:text-gray-400">Targets</p>
             <p className="hover:text-gray-400">Pending</p>
-            <p className="hover:text-gray-400"><Link to="/notes" onClick={(e)=>{
-                e.preventDefault();
-                window.location.href = "/notes"; // Redirect to the Notes page
-            }}>Notes</Link></p>
+            
+            <p className="hover:text-gray-400"><Link to="/notes">Notes</Link></p>
+            
             <p className="hover:text-gray-400">Ache Questions</p>
-            </BrowserRouter>
         </div>
         <div>
             <button className="text-md  rounded-xl p-3 text-sky-400 hover:text-sky-500"><a href="https://phpmyadmin.co/">Database Health</a></button>

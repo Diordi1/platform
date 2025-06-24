@@ -24,8 +24,8 @@ function App() {
         backgroundRepeat:"repeat",
       }}
     >
+        <BrowserRouter>
       <Header/>
-      <BrowserRouter>
         <Routes>  
           <Route path="/" element={<QuestionCatalog/>} />
           <Route path="/notes" element={
